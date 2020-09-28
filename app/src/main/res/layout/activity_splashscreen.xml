@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cloud_background"
+    android:padding="16dp"
+    tools:context=".SplashScreen">
+<!-- guidelines which will be essential base components in all future layout xmls.-->
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vguide_left2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.04136253" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vguide_right2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.96107054" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vguide_mid2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/hguide_zero2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/hguide_fifty2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/hguide_twentyfive2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/hguide_seventyfive2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/hguide_hundred2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="1.0" />
+
+<!--        put an image in here for a pretty welcome header to the user-->
+        <ImageView
+            android:id="@+id/hithere_header"
+            android:layout_width="319dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/hellothere"
+            app:layout_constraintBottom_toTopOf="@+id/welcome"
+            app:layout_constraintEnd_toStartOf="@+id/vguide_right2"
+            app:layout_constraintStart_toStartOf="@+id/vguide_left2"
+            app:layout_constraintTop_toTopOf="@+id/hguide_zero2"
+            tools:ignore="ContentDescription">
+
+        </ImageView>
+<!-- quick welcome prompt to the user to remind them what app they are now in-->
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="casual"
+            android:gravity="center_horizontal"
+            android:importantForAutofill="no"
+            android:inputType="none"
+            android:text="@string/ss_welcome"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/mainsplash_pic"
+            app:layout_constraintEnd_toStartOf="@+id/vguide_right2"
+            app:layout_constraintStart_toStartOf="@+id/vguide_left2"
+            app:layout_constraintTop_toBottomOf="@+id/hithere_header" />
+
+<!-- second image of a lightbulb which is constrained. imported in the drawable folder-->
+        <ImageView
+            android:id="@+id/mainsplash_pic"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/hguide_seventyfive2"
+            app:layout_constraintEnd_toStartOf="@+id/vguide_right2"
+            app:layout_constraintStart_toStartOf="@+id/vguide_left2"
+            app:layout_constraintTop_toBottomOf="@+id/welcome"
+            app:srcCompat="@drawable/pngwave"
+            tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

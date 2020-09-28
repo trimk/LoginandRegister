@@ -1,0 +1,39 @@
+<resources>
+    <!--   Splash Screen -->
+    <string name="app_name">Log Me In App</string>
+    <string name="ss_welcome">It\'s \'Log Me in\' app.</string>
+    <string name="msg_begin">To Begin, please choose: \nlogin or register below</string>
+    <string name="msg_makeacct"> No account? \nClick REGISTER to make one!</string>
+
+    <!-- User Login/Register Screen-->
+    <string name="s2_title">Login or Register?</string>
+    <string name="s2_login_btn"> Login</string>
+    <string name="s2_login_label"> Login</string>
+    <string name="s2_reg_label"> Register</string>
+    <string name="s2_reg_btn"> Register</string>
+
+    <string name="s2_login_label1"> Name</string>
+    <string name="s2_login_label2"> Password</string>
+    <string name="s2_login_input1"> First &amp; Last Name</string>
+    <string name="s2_login_input2"> Enter Password</string>
+
+    <!-- User Registration Screen-->
+    <string name="s3_title">Registration</string>
+    <string name="user_instructions">To register, please enter the following
+        information below.</string>
+    <string name="s3_reg_firstname_label"> First Name </string>
+    <string name="s3_reg_familyname_label"> Last Name </string>
+    <string name="s3_reg_dob_label"> Date of Birth </string>
+    <string name="s3_reg_email_label"> Email Address </string>
+    <string name="s3_reg_pwd_label">Password </string>
+    <string name="s3_dob_hint">MM/DD/YYYY </string>
+    <string name="s3_email_hint">example@gmail.com</string>
+
+
+    <string name="error_empty">Error:missing text in required field</string>
+
+    <!-- Toast Strings-->
+    <string name="toast_empty">Please enter text in this field!</string>
+    <string name="toast_invalid_email">Please enter a valid email address!</string>
+
+</resources>

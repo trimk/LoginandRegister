@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pastel_background2"
+    tools:context=".RegistrationActivity">
+
+<!--    //imported a pretty background and assigned the xml file to the registration activity-->
+    <TextView
+        android:id="@+id/s3_title"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:text="@string/s3_title"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/input_firstname"
+        app:layout_constraintEnd_toStartOf="@+id/vguide_right"
+        app:layout_constraintStart_toStartOf="@+id/vguide_left"
+        app:layout_constraintTop_toTopOf="@+id/hguide_zero" />
+
+    <TextView
+        android:id="@+id/lbl_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/s3_reg_firstname_label"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hguide_twentyfive"
+        app:layout_constraintEnd_toStartOf="@+id/vguide_mid"
+        app:layout_constraintStart_toStartOf="@+id/vguide_left"
+        app:layout_constraintTop_toTopOf="@+id/hguide_zero"
+        app:layout_constraintVertical_bias="0.707" />
+
+    <TextView
+        android:id="@+id/lbl_lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/s3_reg_familyname_label"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_firstname"
+        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintStart_toStartOf="@+id/vguide_left"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_firstname" />
+
+    <TextView
+        android:id="@+id/lbl_dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/s3_reg_dob_label"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_lastname"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="@+id/vguide_left"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_lastname" />
+
+    <TextView
+        android:id="@+id/lbl_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/s3_reg_email_label"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_dob"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/vguide_left"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_dob" />
+
+    <TextView
+        android:id="@+id/lbl_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/s3_reg_pwd_label"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_email"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/vguide_left"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_email" />
+
+<!--    //important guidelines which will help android app support multiple sizes and keep all the content on the screen.-->
+<androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vguide_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04136253" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vguide_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96107054" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vguide_mid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hguide_zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hguide_fifty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hguide_twentyfive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hguide_seventyfive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hguide_hundred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1.0" />
+
+<!--    //user input fields made and constrained to other vertically aligned objects.-->
+        <EditText
+        android:id="@+id/input_dob"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/s3_dob_hint"
+        android:inputType="date"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lbl_dob"
+        app:layout_constraintEnd_toEndOf="@+id/input_lastname"
+        app:layout_constraintStart_toStartOf="@+id/vguide_mid" />
+
+<!--    //user input fields made and constrained to other vertically aligned objects.-->
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/s3_email_hint"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lbl_email"
+        app:layout_constraintEnd_toEndOf="@+id/input_dob"
+        app:layout_constraintStart_toStartOf="@+id/vguide_mid" />
+<!--    //user input fields made and constrained to other vertically aligned objects.-->
+    <EditText
+        android:id="@+id/input_pwd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/s3_reg_pwd_label"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lbl_pwd"
+        app:layout_constraintEnd_toStartOf="@+id/vguide_right"
+        app:layout_constraintStart_toStartOf="@+id/vguide_mid" />
+<!--    //user input fields made and constrained to other vertically aligned objects.-->
+    <EditText
+        android:id="@+id/input_firstname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/s3_reg_firstname_label"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lbl_firstname"
+        app:layout_constraintEnd_toStartOf="@+id/vguide_right"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/vguide_mid" />
+<!--    //user input fields made and constrained to other vertically aligned objects.-->
+    <EditText
+        android:id="@+id/input_lastname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/s3_reg_familyname_label"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lbl_lastname"
+        app:layout_constraintEnd_toStartOf="@+id/vguide_right"
+        app:layout_constraintStart_toStartOf="@+id/vguide_mid" />
+<!--// button  for register to bring back to main activity-->
+    <!--// additional guidelines to help with the formatting to support multiple images when objects are constrained-->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/medium_slate_blue"
+        android:text="@string/s2_reg_btn"
+        android:textColor="@color/cornsilk"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/hguide_hundred"
+        app:layout_constraintEnd_toStartOf="@+id/vguide_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/vguide_left"
+        app:layout_constraintTop_toTopOf="@+id/hguide_seventyfive"
+        app:layout_constraintVertical_bias="0.583" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
